@@ -1,0 +1,103 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.ItemProperties.src.Services.Ordering.Ordering.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.src.ApiGateways.OcelotApiGw.OcelotApiGw PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Catalog/Catalog.API/Data/CatalogContext.cs">
+    <Files>
+      <File FileName="docker-compose.override.yml" Line="65" Column="29" IsPinned="True" />
+      <File FileName="docker-compose.yml" Line="34" Column="11" />
+      <File FileName="Services/Basket/Basket.API/Controllers/BasketController.cs" Line="81" Column="10" />
+      <File FileName="Services/Ordering/Ordering.API/EventBusConsumer/BasketCheckoutConsumer.cs" Line="33" Column="8" />
+      <File FileName="Services/Ordering/Ordering.API/Controllers/OrderController.cs" Line="29" Column="1" />
+      <File FileName="Services/Catalog/Catalog.API/Entities/Product.cs" Line="12" Column="14" />
+      <File FileName="Services/Ordering/Ordering.API/Program.cs" Line="17" Column="1" />
+      <File FileName="Services/Ordering/Ordering.API/appsettings.json" Line="1" Column="1" />
+      <File FileName="Services/Ordering/Ordering.API/Startup.cs" Line="1" Column="1" />
+      <File FileName="Services/Ordering/Ordering.API/Repositories/OrderRepositoryRedis.cs" Line="29" Column="10" />
+      <File FileName="ApiGateways/OcelotApiGw/OcelotApiGw/ocelot.json" Line="1" Column="1" />
+      <File FileName="ApiGateways/OcelotApiGw/OcelotApiGw/ocelot.Development.json" Line="1" Column="1" />
+      <File FileName="ApiGateways/OcelotApiGw/OcelotApiGw/ocelot.Local.json" Line="87" Column="20" />
+      <File FileName="Services/Ordering/Ordering.API/Repositories/IOrderRepositoryRedis.cs" Line="8" Column="21" />
+      <File FileName="Services/Basket/Basket.API/appsettings.json" Line="17" Column="1" />
+      <File FileName="ApiGateways/OcelotApiGw/OcelotApiGw/OcelotApiGw.csproj" Line="1" Column="1" />
+      <File FileName="ApiGateways/OcelotApiGw/OcelotApiGw/Startup.cs" Line="13" Column="22" />
+      <File FileName="Services/Basket/Basket.API/Entities/ShoppingCart.cs" Line="16" Column="33" />
+      <File FileName="Services/Basket/Basket.API/Entities/ShoppingCartItem.cs" Line="10" Column="48" />
+      <File FileName="Services/Basket/Basket.API/Entities/BasketCheckout.cs" Line="22" Column="47" />
+      <File FileName="Services/Basket/Basket.API/Repositories/BasketRepository.cs" Line="16" Column="10" />
+      <File FileName="Services/Basket/Basket.API/Repositories/IBasketRepository.cs" Line="10" Column="40" />
+      <File FileName="Services/Basket/Basket.API/Basket.API.csproj" Line="33" Column="54" />
+      <File FileName="Services/Basket/Basket.API/Properties/launchSettings.json" Line="30" Column="2" />
+      <File FileName="Services/Basket/Basket.API/Startup.cs" Line="30" Column="1" />
+      <File FileName="Services/Basket/Basket.API/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="Services/Basket/Basket.API/Dockerfile" Line="12" Column="9" />
+      <File FileName="Services/Catalog/Catalog.API/Data/CatalogContext.cs" Line="8" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="training-microservices" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="Catalog" expanded="True">
+                  <Node name="Catalog.API" expanded="True">
+                    <Node name="Data" expanded="True">
+                      <Node name="CatalogContext.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Ordering" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.src.Services.Catalog.Catalog.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs" relfile="Services/Ordering/Ordering.API/Controllers/OrderController.cs" line="16" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs" relfile="Services/Ordering/Ordering.API/Controllers/OrderController.cs" line="48" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs" relfile="Services/Ordering/Ordering.API/Controllers/OrderController.cs" line="50" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Basket/Basket.API/Controllers/BasketController.cs" relfile="Services/Basket/Basket.API/Controllers/BasketController.cs" line="59" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Persistence/OrderContext.cs" relfile="Services/Ordering/Ordering.Infrastructure/Persistence/OrderContext.cs" line="19" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepository.cs" relfile="Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepository.cs" line="36" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepository.cs" relfile="Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepository.cs" line="24" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepository.cs" relfile="Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepository.cs" line="14" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Persistence/DataGenerator.cs" relfile="Services/Ordering/Ordering.Infrastructure/Persistence/DataGenerator.cs" line="18" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Persistence/DataGenerator.cs" relfile="Services/Ordering/Ordering.Infrastructure/Persistence/DataGenerator.cs" line="27" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Persistence/DataGenerator.cs" relfile="Services/Ordering/Ordering.Infrastructure/Persistence/DataGenerator.cs" line="29" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs" relfile="Services/Ordering/Ordering.Infrastructure/InfrastructureServiceRegistration.cs" line="8" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Catalog/Catalog.API/Controllers/CatalogController.cs" relfile="Services/Catalog/Catalog.API/Controllers/CatalogController.cs" line="38" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Catalog/Catalog.API/Repositories/ProductRepository.cs" relfile="Services/Catalog/Catalog.API/Repositories/ProductRepository.cs" line="27" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepositoryRedis.cs" relfile="Services/Ordering/Ordering.Infrastructure/Repositories/OrderRepositoryRedis.cs" line="20" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Repositories/OrderRepositoryRedis.cs" relfile="Services/Ordering/Ordering.API/Repositories/OrderRepositoryRedis.cs" line="25" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Repositories/OrderRepositoryRedis.cs" relfile="Services/Ordering/Ordering.API/Repositories/OrderRepositoryRedis.cs" line="22" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Repositories/OrderRepositoryRedis.cs" relfile="Services/Ordering/Ordering.API/Repositories/OrderRepositoryRedis.cs" line="20" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs" relfile="Services/Ordering/Ordering.API/Controllers/OrderController.cs" line="51" column="1" />
+      <Breakpoint enabled="false" file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs" relfile="Services/Ordering/Ordering.API/Controllers/OrderController.cs" line="49" column="1" />
+      <Breakpoint file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Basket/Basket.API/Controllers/BasketController.cs" relfile="Services/Basket/Basket.API/Controllers/BasketController.cs" line="75" column="1" />
+      <Breakpoint file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Basket/Basket.API/Controllers/BasketController.cs" relfile="Services/Basket/Basket.API/Controllers/BasketController.cs" line="78" column="1" />
+      <Breakpoint file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/EventBusConsumer/BasketCheckoutConsumer.cs" relfile="Services/Ordering/Ordering.API/EventBusConsumer/BasketCheckoutConsumer.cs" line="26" column="1" />
+      <Breakpoint file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/EventBusConsumer/BasketCheckoutConsumer.cs" relfile="Services/Ordering/Ordering.API/EventBusConsumer/BasketCheckoutConsumer.cs" line="19" column="1" />
+      <Breakpoint file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs" relfile="Services/Ordering/Ordering.API/Controllers/OrderController.cs" line="29" column="1" />
+      <Breakpoint file="/Users/sahilmansi/Documents/microservices/microservices-training/training-microservices/src/Services/Ordering/Ordering.API/Controllers/OrderController.cs" relfile="Services/Ordering/Ordering.API/Controllers/OrderController.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{91B7E590-8474-494F-BF7D-D072A4C14ECF}" ItemName="Basket.API" ConfigurationId="Default" />
+        <StartupItem ItemId="{D0AE0B07-9FD0-43F4-960C-AE760D6E00C9}" ItemName="OcelotApiGw" ConfigurationId="Default" />
+        <StartupItem ItemId="{E30F367F-4E46-4CCE-B4AC-48550BD3749B}" ItemName="Ordering.API" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.src.Services.Basket.Basket.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

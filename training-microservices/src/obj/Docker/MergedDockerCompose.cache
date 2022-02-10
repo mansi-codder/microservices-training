@@ -1,0 +1,143 @@
+services:
+  basket.api:
+    build:
+      context: .
+      dockerfile: Services/Basket/Basket.API/Dockerfile
+    container_name: basket.api
+    depends_on:
+      basketdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CacheSettings:ConnectionString: basketdb:6379
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:5672
+    image: basketapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8002
+      protocol: tcp
+  basketdb:
+    container_name: basketdb
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: 6379
+      protocol: tcp
+    restart: always
+  catalog.api:
+    build:
+      context: .
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
+    container_name: catalog.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      MongoDB:ConnectionString: mongodb://root:example@catalogdb:27017
+    image: catalogapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8001
+      protocol: tcp
+  catalogdb:
+    container_name: catalogdb
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_USERNAME: root
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: 27017
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+  orderingnew.api:
+    build:
+      context: .
+      dockerfile: Services/Ordering/Ordering.API/Dockerfile
+    container_name: orderingnew.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CacheSettings:ConnectionString: orderingnewdb:6379
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:5672
+    image: orderingnewapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8004
+      protocol: tcp
+  orderingnewdb:
+    container_name: orderingnewdb
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: 6378
+      protocol: tcp
+    restart: always
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 8000
+      published: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 9000
+      published: 9000
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
+      bind:
+        create_host_path: true
+    - type: volume
+      source: portainer_data
+      target: /data
+      volume: {}
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management-alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5672
+      published: 5672
+      protocol: tcp
+    - mode: ingress
+      target: 15672
+      published: 15672
+      protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose84945932356148978_default
+volumes:
+  mongo_data:
+    name: dockercompose84945932356148978_mongo_data
+  portainer_data:
+    name: dockercompose84945932356148978_portainer_data
